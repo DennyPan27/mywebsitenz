@@ -6,7 +6,7 @@ body {
 }
 
 header nav {
-    background-color: #6a1b9a; /* Purple color */
+    background-color: #6b1f9a; /* Purple color */
     color: white;
     padding: 10px;
     text-align: center;
@@ -19,22 +19,69 @@ nav a {
     text-align: center;
 }
 
-section {
+#introduction {
+    background-color: #f9f9f9;
+    padding: 2em;
+    text-align: center;
+    height: 100vh;  /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#content-wrapper {
+    display: flex;
+    justify-content: flex-start;  /* Align items to the start */
+    flex-wrap: wrap;  /* Allow wrapping */
+    overflow-x: auto;  /* Add horizontal scrollbar */
+    padding: 0 15px;  /* Add padding to the sides */
+}
+
+.content-section {
+    flex: 0 0 calc(30% - 20px);  /* Each section takes up about 30% of the container width */
+    margin: 10px;  /* Reduced margin */
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;  /* White background */
+}
+
+.content-section h2 {
+    background-color: #6b1f9a; /* Purple background */
+    color: #fff; /* White text */
+    padding: 10px;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+.content-section img {
+    display: block;
+    margin: 0 auto 10px;  /* Center the image and add margin below it */
+    max-width: 50px;  /* Set a maximum width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 h1, h2, h3 {
-    color: #6a1b9a; /* Purple color */
+    color: #6b1f9a; /* Purple color */
 }
 
 footer {
-    background-color: #6a1b9a; /* Purple color */
+    background-color: #6b1f9a; /* Purple color */
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 0.00000001px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1000;  /* Make sure the footer is above other content */
 }
 
 section:last-of-type {
